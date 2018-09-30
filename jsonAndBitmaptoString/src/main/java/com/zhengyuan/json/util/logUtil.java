@@ -1,4 +1,4 @@
-package com.zhengyuan.json.logutil;
+package com.zhengyuan.json.util;
 
 import android.util.Log;
 

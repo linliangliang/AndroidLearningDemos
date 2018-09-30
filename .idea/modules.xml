@@ -7,7 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/beautifului/beautifului.iml" filepath="$PROJECT_DIR$/beautifului/beautifului.iml" />
       <module fileurl="file://$PROJECT_DIR$/dialogshowinfo/dialogshowinfo.iml" filepath="$PROJECT_DIR$/dialogshowinfo/dialogshowinfo.iml" />
       <module fileurl="file://$PROJECT_DIR$/httpconnection/httpconnection.iml" filepath="$PROJECT_DIR$/httpconnection/httpconnection.iml" />
-      <module fileurl="file://$PROJECT_DIR$/json/json.iml" filepath="$PROJECT_DIR$/json/json.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsonAndBitmaptoString/json.iml" filepath="$PROJECT_DIR$/jsonAndBitmaptoString/json.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/progressbar/progressbar.iml" filepath="$PROJECT_DIR$/progressbar/progressbar.iml" />
     </modules>
