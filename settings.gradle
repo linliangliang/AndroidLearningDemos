@@ -1,1 +1,1 @@
-include ':app', ':httpconnection', ':dialogshowinfo', ':library'
+include ':app', ':httpconnection', ':dialogshowinfo', ':library', ':progressbar', ':beautifului', ':json'
