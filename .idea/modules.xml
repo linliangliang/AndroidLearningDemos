@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/jsonAndBitmaptoString/json.iml" filepath="$PROJECT_DIR$/jsonAndBitmaptoString/json.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/progressbar/progressbar.iml" filepath="$PROJECT_DIR$/progressbar/progressbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/skill/skill.iml" filepath="$PROJECT_DIR$/skill/skill.iml" />
     </modules>
   </component>
 </project>

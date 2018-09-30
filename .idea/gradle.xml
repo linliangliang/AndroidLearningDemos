@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/jsonAndBitmaptoString" />
             <option value="$PROJECT_DIR$/library" />
             <option value="$PROJECT_DIR$/progressbar" />
+            <option value="$PROJECT_DIR$/skill" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
