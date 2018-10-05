@@ -17,20 +17,26 @@
             android:layout_height="36dp"
             android:layout_marginLeft="36dp"
             android:layout_marginRight="36dp"
-            android:hint="请输入用户名"
+            android:hint="请输入用户名0"
             android:padding="5dip"
             android:singleLine="true"
             android:textColorHint="#AAAAAA"
             android:textSize="15dip" />
+            android:layout_height="wrap_content" />
 
         <EditText
+            android:id="@+id/EditText2"
             android:layout_width="fill_parent"
             android:layout_height="36dp"
             android:layout_marginLeft="36dp"
             android:layout_marginRight="36dp"
+            android:drawableLeft="@mipmap/search_blue32"
             android:background="@drawable/bg_edittext_selector"
             android:hint="请输入用户名"
-            android:padding="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
             android:singleLine="true"
             android:textColorHint="#AAAAAA"
             android:textSize="15dip" />

@@ -1,20 +1,36 @@
 package com.zhengyuan.beautifului;
 
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     Button showDialogButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
         initEvent();
+
+        EditText textView = findViewById(R.id.EditText2);
+        DrawableUtil drawableUtil = new DrawableUtil(textView, new DrawableUtil.OnDrawableListener() {
+            @Override
+            public void onLeft(View v, Drawable left) {
+                Toast.makeText(getApplicationContext(), "left", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onRight(View v, Drawable right) {
+                Toast.makeText(getApplicationContext(), "right", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     private void initView() {

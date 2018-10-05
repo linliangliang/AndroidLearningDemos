@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
         Drawable drawable = getResources().getDrawable(R.drawable.error16);
         // 设置图片大小
         drawable.setBounds(0, 0, drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight());
-
         editview1.setError("请输入手机号", drawable);
     }
 
