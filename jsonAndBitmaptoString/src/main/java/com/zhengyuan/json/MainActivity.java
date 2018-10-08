@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.zhengyuan.json.entity.User;
 import com.zhengyuan.json.util.BitmapAndStringUtils;
 import com.zhengyuan.json.util.logUtil;
@@ -57,7 +58,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
 
     private void testJson() {
-
+        //序列化
         User user1 = new User("linliang", "123455");
         User user2 = new User("linliang", "123456");
         User user3 = new User("linliang", "123457");
@@ -74,11 +75,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
 
         Map<String, String> map = new HashMap<String, String>();
-        map.put("111", "111");
-        map.put("112", "112");
-        map.put("113", "113");
-        map.put("114", "114");
-        map.put("115", "115");
+        map.put("111", "1111");
+        map.put("112", "1122");
+        map.put("113", "1133");
+        map.put("114", "1144");
+        map.put("115", "1155");
 
         String mapString = g.toJson(map);
         logUtil.i("mapString", mapString);
@@ -86,6 +87,19 @@ public class MainActivity extends Activity implements View.OnClickListener {
         String[] array = {"11", "22", "33"};
         String arrayString = g.toJson(array);
         logUtil.i("arrayString", arrayString);
+
+        //反序列化
+        List<User> userList2 = g.fromJson(json1, new TypeToken<List<User>>() {
+        }.getType());
+        logUtil.i("反序列化List", userList2.get(1).toString());
+
+        Map<String, String> usermap = g.fromJson(mapString, Map.class);
+        logUtil.i("反序列化Map", usermap.get("111"));
+        logUtil.i("反序列化Map", usermap.get("115"));
+
+        String[] userString2 = g.fromJson(arrayString, String[].class);
+        logUtil.i("反序列化String[]", userString2[1]);
+
     }
 
     private void testBitmapToString() {
