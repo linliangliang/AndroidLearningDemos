@@ -39,5 +39,6 @@ dependencies {
 
     implementation 'com.android.support:design:26.0.0'
     implementation 'com.ashokvarma.android:bottom-navigation-bar:0.9.5'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
 
 }

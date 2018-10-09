@@ -54,5 +54,11 @@
         android:layout_height="wrap_content"
         android:text="popipwindow" />
 
+    <Button
+        android:id="@+id/takePhotoAndSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="takePhotoAndSave" />
+
 
 </LinearLayout>

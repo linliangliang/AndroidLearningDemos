@@ -1,6 +1,8 @@
 package com.zhengyuan.skill;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,6 +13,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.animation.GlideAnimation;
+import com.bumptech.glide.request.target.SimpleTarget;
 import com.zhengyuan.skill.ButtomNavigationBar.MyButtomNavigationBar;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -21,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button BottomNavigationView;
     private Button BottomNavigationBar;
     private Button popipwindow;
+    private Button mTakePhotoAndSave;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +56,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.popipwindow:
                 intent = new Intent(MainActivity.this, PopipWindow.class);
+                startActivity(intent);
+                break;
+
+            case R.id.takePhotoAndSave:
+                intent = new Intent(MainActivity.this, TakePhotoAndSave.class);
                 startActivity(intent);
                 break;
         }
@@ -82,6 +93,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         BottomNavigationView = (Button) findViewById(R.id.BottomNavigationView);
         BottomNavigationBar = (Button) findViewById(R.id.BottomNavigationBar);
         popipwindow = (Button) findViewById(R.id.popipwindow);
+        mTakePhotoAndSave = (Button) findViewById(R.id.takePhotoAndSave);
     }
 
     private void initEvent() {
@@ -90,6 +102,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         BottomNavigationView.setOnClickListener(this);
         BottomNavigationBar.setOnClickListener(this);
         popipwindow.setOnClickListener(this);
+        mTakePhotoAndSave.setOnClickListener(this);
         initToolbar();
     }
 
@@ -127,4 +140,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     }
+
+
 }
