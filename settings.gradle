@@ -1,1 +1,1 @@
-include ':app', ':httpconnection', ':dialogshowinfo', ':library', ':progressbar', ':beautifului', ':jsonAndBitmaptoString', ':skill'
+include ':app', ':httpconnection', ':dialogshowinfo', ':library', ':progressbar', ':beautifului', ':jsonAndBitmaptoString', ':skill', ':takephoto'
